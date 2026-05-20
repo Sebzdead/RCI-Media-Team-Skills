@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Color pairings</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin: 0; padding: 0; background: var(--rci-offwhite); }
+  .wrap { padding: 22px 26px; }
+  .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+  .tile {
+    aspect-ratio: 1 / 1;
+    display: flex; align-items: center; justify-content: center;
+    padding: 10px;
+    font-family: var(--font-display);
+    font-size: 36px; line-height: 0.9;
+    text-transform: uppercase;
+    text-align: center;
+    border: 2px solid var(--rci-ink);
+  }
+  .lbl { font-family: var(--font-condensed); font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="grid">
+    <div class="tile" style="background:#222;color:#f6efef">INK<br><span class="lbl">on Off-white</span></div>
+    <div class="tile" style="background:#da0d10;color:#f6efef">RED<br><span class="lbl">on Off-white</span></div>
+    <div class="tile" style="background:#f6efef;color:#da0d10;border-color:#da0d10">RED<br><span class="lbl">on Paper</span></div>
+    <div class="tile" style="background:#222;color:#da0d10">RED<br><span class="lbl">on Ink</span></div>
+  </div>
+</div>
+</body>
+</html>

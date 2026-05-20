@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Logo family</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin: 0; padding: 0; background: #fff; }
+  .wrap { padding: 18px 22px; display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
+  .panel {
+    aspect-ratio: 1 / 1;
+    border: 2px solid var(--rci-ink);
+    background: var(--rci-offwhite);
+    display: flex; align-items: center; justify-content: center;
+    padding: 12px;
+    position: relative;
+  }
+  .panel.ink { background: var(--rci-ink); }
+  .panel.red { background: var(--rci-red); }
+  .panel img { max-width: 100%; max-height: 100%; display: block; }
+  .lbl {
+    position: absolute; left: 0; bottom: 0;
+    padding: 3px 6px;
+    background: var(--rci-ink);
+    color: var(--rci-offwhite);
+    font-family: var(--font-condensed);
+    font-size: 9px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+  .panel.ink .lbl, .panel.red .lbl { background: var(--rci-offwhite); color: var(--rci-ink); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="panel">
+    <img src="../assets/logos/rci-social-square.png" alt="">
+    <span class="lbl">Square red</span>
+  </div>
+  <div class="panel">
+    <img src="../assets/logos/rci-social-round.svg" alt="">
+    <span class="lbl">Round red</span>
+  </div>
+  <div class="panel">
+    <img src="../assets/logos/rci-logo-english.svg" alt="">
+    <span class="lbl">English logo</span>
+  </div>
+  <div class="panel">
+    <img src="../assets/logos/rci-logo-black.svg" alt="">
+    <span class="lbl">Black</span>
+  </div>
+  <div class="panel ink">
+    <img src="../assets/logos/rci-logo-english-white.svg" alt="">
+    <span class="lbl">White on ink</span>
+  </div>
+</div>
+</body>
+</html>

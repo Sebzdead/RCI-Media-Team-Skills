@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Headline slabs</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin: 0; padding: 0; background: var(--rci-offwhite); }
+  .wrap { padding: 18px 26px; display: flex; flex-direction: column; gap: 12px; }
+  .slab {
+    display: inline-block;
+    padding: 6px 14px 4px;
+    font-family: var(--font-display);
+    font-size: 38px;
+    line-height: 0.95;
+    text-transform: uppercase;
+    color: var(--rci-offwhite);
+    background: var(--rci-red);
+  }
+  .slab--ink { background: var(--rci-ink); }
+  .slab--paper { background: var(--rci-offwhite); color: var(--rci-red); border: 2px solid var(--rci-red); }
+  .row { display: flex; gap: 0; align-items: flex-start; flex-direction: column; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="row">
+    <span class="slab">TRUMP FACES</span>
+    <span class="slab slab--ink" style="margin-top:-4px">AN IMPOSSIBLE DILEMMA</span>
+  </div>
+  <div class="row" style="margin-top:8px">
+    <span class="slab slab--paper">LESS IS MORE</span>
+  </div>
+</div>
+</body>
+</html>

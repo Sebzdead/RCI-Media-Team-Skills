@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Extended neutrals</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin: 0; padding: 0; background: var(--rci-offwhite); }
+  .wrap { padding: 22px 26px; }
+  .row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+  .sw {
+    height: 110px;
+    display: flex; flex-direction: column; justify-content: space-between;
+    padding: 12px;
+    border: 2px solid var(--rci-ink);
+    font-family: var(--font-condensed);
+    text-transform: uppercase; letter-spacing: 0.06em;
+  }
+  .sw .name { font-weight: 700; font-size: 14px; line-height: 1; }
+  .sw .hex  { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0; }
+  .label { font-family: var(--font-condensed); font-size: 12px; text-transform: uppercase; letter-spacing: 0.18em; color: var(--rci-red); margin-bottom: 8px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="label">Extended neutrals · for hover, hairlines & captions</div>
+  <div class="row">
+    <div class="sw" style="background:#8a0608;color:#f6efef"><span class="name">Red Dark</span><span class="hex">#8A0608</span></div>
+    <div class="sw" style="background:#3a3a3a;color:#f6efef"><span class="name">Ink Soft</span><span class="hex">#3A3A3A</span></div>
+    <div class="sw" style="background:#6b6b6b;color:#f6efef"><span class="name">Ash</span><span class="hex">#6B6B6B</span></div>
+    <div class="sw" style="background:#c9c2c2;color:#222"><span class="name">Fog</span><span class="hex">#C9C2C2</span></div>
+  </div>
+</div>
+</body>
+</html>

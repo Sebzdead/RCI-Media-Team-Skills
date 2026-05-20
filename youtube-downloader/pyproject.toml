@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "youtube-downloader"
+version = "0.1.0"
+description = "A premium CLI tool to download YouTube videos and transcode them to H.264 MP4 (low res) or ProRes MOV (high res)."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "yt-dlp>=2025.1.26",
+    "rich>=13.7.0"
+]
+
+[project.scripts]
+yt-download = "youtube_downloader.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["youtube_downloader"]

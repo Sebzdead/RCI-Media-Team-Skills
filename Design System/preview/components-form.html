@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Form input</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin: 0; padding: 0; background: var(--rci-offwhite); }
+  .wrap { padding: 22px 26px; display: grid; grid-template-columns: 1fr 1fr; gap: 14px 18px; align-items: end; }
+  .field { display: flex; flex-direction: column; gap: 6px; }
+  label { font-family: var(--font-condensed); font-weight: 700; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--rci-ink); }
+  .input {
+    font-family: var(--font-subhead);
+    font-size: 16px;
+    padding: 10px 12px;
+    background: var(--rci-offwhite);
+    border: 2px solid var(--rci-ink);
+    color: var(--rci-ink);
+    outline: none;
+  }
+  .input:focus { box-shadow: 4px 4px 0 var(--rci-red); }
+  .help { font-family: var(--font-condensed); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--rci-ash); }
+  .submit {
+    font-family: var(--font-condensed); font-weight: 700; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase;
+    padding: 12px 18px;
+    border: 2px solid var(--rci-ink);
+    background: var(--rci-red); color: var(--rci-offwhite);
+    box-shadow: 4px 4px 0 var(--rci-ink);
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="field">
+    <label>Email</label>
+    <input class="input" type="email" value="comrade@marxist.com">
+    <span class="help">You'll receive our weekly newsletter.</span>
+  </div>
+  <div class="field">
+    <button class="submit">Subscribe →</button>
+  </div>
+</div>
+</body>
+</html>

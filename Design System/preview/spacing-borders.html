@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Borders & rules</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin: 0; padding: 0; background: var(--rci-offwhite); }
+  .wrap { padding: 18px 26px; }
+  .row { display: flex; align-items: center; gap: 14px; padding: 6px 0; }
+  .rule { background: var(--rci-ink); flex: 1; }
+  .tag { font-family: var(--font-mono); font-size: 11px; color: var(--rci-ash); width: 110px; text-align: right; }
+  .name { font-family: var(--font-condensed); font-weight: 700; text-transform: uppercase; font-size: 12px; letter-spacing: 0.12em; width: 70px; }
+  .radius { display: flex; gap: 10px; margin-top: 12px; }
+  .chip { padding: 6px 14px; border: 2px solid var(--rci-ink); background: var(--rci-offwhite); font-family: var(--font-condensed); font-weight: 700; font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="row"><span class="name">Hair</span><div class="rule" style="height:1px"></div><span class="tag">1 px · hairline</span></div>
+  <div class="row"><span class="name">Rule</span><div class="rule" style="height:2px"></div><span class="tag">2 px · default</span></div>
+  <div class="row"><span class="name">Thick</span><div class="rule" style="height:4px"></div><span class="tag">4 px · panels</span></div>
+  <div class="row"><span class="name">Slab</span><div class="rule" style="height:8px"></div><span class="tag">8 px · poster</span></div>
+  <div class="radius">
+    <span class="chip" style="border-radius:0">RADIUS 0</span>
+    <span class="chip" style="border-radius:2px">RADIUS 1</span>
+    <span class="chip" style="border-radius:4px">RADIUS 2</span>
+  </div>
+</div>
+</body>
+</html>

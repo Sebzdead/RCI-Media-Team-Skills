@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Elevation — ink-stamp shadows</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin: 0; padding: 0; background: var(--rci-offwhite); }
+  .wrap { padding: 22px 26px; display: flex; gap: 28px; align-items: flex-start; }
+  .card {
+    padding: 12px 20px;
+    background: var(--rci-offwhite);
+    border: 2px solid var(--rci-ink);
+    font-family: var(--font-display);
+    font-size: 28px; line-height: 1;
+    text-transform: uppercase;
+    color: var(--rci-ink);
+  }
+  .a { box-shadow: 4px 4px 0 var(--rci-ink); }
+  .b { box-shadow: 6px 6px 0 var(--rci-red); }
+  .c { background: var(--rci-red); color: var(--rci-offwhite); box-shadow: 6px 6px 0 var(--rci-ink); border-color: var(--rci-ink); }
+  .lbl { display:block; font-family: var(--font-condensed); font-size: 11px; letter-spacing: 0.14em; color: var(--rci-ash); margin-top: 8px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div><div class="card a">STAMP</div><span class="lbl">4 4 0 INK</span></div>
+  <div><div class="card b">STAMP</div><span class="lbl">6 6 0 RED</span></div>
+  <div><div class="card c">STAMP</div><span class="lbl">RED + 6 6 0 INK</span></div>
+</div>
+</body>
+</html>

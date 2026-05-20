@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Primary palette</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin: 0; padding: 0; background: var(--rci-offwhite); }
+  .wrap { padding: 22px 26px; }
+  .swatches { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
+  .sw {
+    aspect-ratio: 1 / 1;
+    display: flex; flex-direction: column; justify-content: space-between;
+    padding: 12px 12px 10px;
+    border: 2px solid var(--rci-ink);
+    font-family: var(--font-condensed);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .sw .name { font-weight: 700; font-size: 14px; line-height: 1; }
+  .sw .hex  { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0; opacity: 0.85; }
+  .on-dark { color: var(--rci-offwhite); }
+  .on-light { color: var(--rci-ink); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="swatches">
+    <div class="sw on-dark" style="background:#da0d10"><span class="name">Red</span><span class="hex">#DA0D10</span></div>
+    <div class="sw on-dark" style="background:#e6002b"><span class="name">Red Hot</span><span class="hex">#E6002B</span></div>
+    <div class="sw on-light" style="background:#f6efef"><span class="name">Off-white</span><span class="hex">#F6EFEF</span></div>
+    <div class="sw on-light" style="background:#ffffff;border-color:#222"><span class="name">White</span><span class="hex">#FFFFFF</span></div>
+    <div class="sw on-dark" style="background:#222222"><span class="name">Ink</span><span class="hex">#222222</span></div>
+  </div>
+</div>
+</body>
+</html>

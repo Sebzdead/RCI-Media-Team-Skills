@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Logo lockup — content footer</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin: 0; padding: 0; background: var(--rci-offwhite); }
+  .wrap { padding: 18px 26px; display: grid; grid-template-columns: 1fr; gap: 14px; }
+  .footer {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 14px;
+    padding: 10px 14px;
+    border-top: 4px solid var(--rci-ink);
+    border-bottom: 4px solid var(--rci-ink);
+    background: var(--rci-offwhite);
+  }
+  .footer.dark { background: var(--rci-ink); color: var(--rci-offwhite); border-color: var(--rci-red); }
+  .lockup { display: flex; align-items: center; gap: 10px; }
+  .lockup .mark { width: 44px; height: 44px; }
+  .lockup .stack {
+    font-family: var(--font-headline);
+    font-weight: 800;
+    font-size: 13px;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+  .lockup .stack .red { color: var(--rci-red); }
+  .url {
+    font-family: var(--font-condensed);
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+  .footer.dark .url { color: var(--rci-offwhite); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="footer">
+    <div class="lockup">
+      <img class="mark" src="../assets/logos/rci-square.svg" alt="">
+      <div class="stack">REVOLUTIONARY<br><span class="red">COMMUNIST</span><br>INTERNATIONAL</div>
+    </div>
+    <span class="url">marxist.com</span>
+  </div>
+  <div class="footer dark">
+    <div class="lockup">
+      <img class="mark" src="../assets/logos/rci-square.svg" alt="">
+      <div class="stack">REVOLUTIONARY<br><span class="red">COMMUNIST</span><br>INTERNATIONAL</div>
+    </div>
+    <span class="url">marxist.com</span>
+  </div>
+</div>
+</body>
+</html>

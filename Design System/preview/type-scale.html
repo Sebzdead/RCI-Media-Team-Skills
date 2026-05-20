@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Type scale</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin: 0; padding: 0; background: var(--rci-offwhite); }
+  .wrap { padding: 18px 26px 22px; }
+  .row { display: flex; align-items: baseline; gap: 18px; padding: 6px 0; border-bottom: 1px solid var(--rci-fog); }
+  .row:last-child { border-bottom: 0; }
+  .sample { font-family: var(--font-display); text-transform: uppercase; line-height: 1; color: var(--rci-ink); flex: 1; }
+  .tag    { font-family: var(--font-mono); font-size: 11px; color: var(--rci-ash); width: 64px; text-align: right; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="row"><div class="sample" style="font-size:72px">HEADLINE</div><div class="tag">72 / H1</div></div>
+  <div class="row"><div class="sample" style="font-size:48px">HEADLINE</div><div class="tag">48 / H2</div></div>
+  <div class="row"><div class="sample" style="font-size:32px;font-family:var(--font-headline);font-weight:800">SUBHEAD</div><div class="tag">32 / H3</div></div>
+  <div class="row"><div class="sample" style="font-size:22px;font-family:var(--font-condensed);font-weight:700;letter-spacing:0.04em">EYEBROW LABEL</div><div class="tag">22 / H4</div></div>
+  <div class="row"><div class="sample" style="font-size:17px;font-family:var(--font-body);text-transform:none">Body copy in Khand — synthetic, concise, with bold on the politically relevant phrase.</div><div class="tag">17 / Body</div></div>
+</div>
+</body>
+</html>

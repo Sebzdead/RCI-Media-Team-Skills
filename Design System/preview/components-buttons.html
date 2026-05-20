@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Buttons</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin: 0; padding: 0; background: var(--rci-offwhite); }
+  .wrap { padding: 20px 26px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px 24px; align-items: start; }
+  .col { display: flex; flex-direction: column; gap: 10px; align-items: flex-start; }
+  .btn {
+    font-family: var(--font-condensed);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 12px 18px;
+    border: 2px solid var(--rci-ink);
+    background: var(--rci-red);
+    color: var(--rci-offwhite);
+    cursor: pointer;
+    box-shadow: 4px 4px 0 var(--rci-ink);
+    transition: transform 90ms ease-out, box-shadow 90ms ease-out, background 90ms ease-out;
+  }
+  .btn:hover { background: var(--rci-red-dark); }
+  .btn:active { transform: translate(4px, 4px); box-shadow: 0 0 0 var(--rci-ink); }
+  .btn--ghost { background: transparent; color: var(--rci-ink); }
+  .btn--ink { background: var(--rci-ink); color: var(--rci-offwhite); }
+  .btn--small { font-size: 11px; padding: 8px 12px; box-shadow: 3px 3px 0 var(--rci-ink); }
+  .lbl { font-family: var(--font-condensed); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--rci-ash); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="col">
+    <span class="lbl">Primary</span>
+    <button class="btn">Read article</button>
+    <button class="btn btn--ink">Watch on YouTube</button>
+    <button class="btn btn--ghost">Share</button>
+  </div>
+  <div class="col">
+    <span class="lbl">Small / chip</span>
+    <button class="btn btn--small">Subscribe</button>
+    <button class="btn btn--small btn--ink">Listen →</button>
+    <button class="btn btn--small btn--ghost">+ Follow</button>
+  </div>
+</div>
+</body>
+</html>

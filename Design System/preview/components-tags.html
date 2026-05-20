@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Tags & badges</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin: 0; padding: 0; background: var(--rci-offwhite); }
+  .wrap { padding: 20px 26px; display: flex; flex-direction: column; gap: 14px; }
+  .row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+  .tag {
+    font-family: var(--font-condensed);
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    padding: 5px 9px;
+    border: 1.5px solid var(--rci-ink);
+    background: var(--rci-offwhite);
+    color: var(--rci-ink);
+  }
+  .tag--red { background: var(--rci-red); color: var(--rci-offwhite); border-color: var(--rci-red); }
+  .tag--ink { background: var(--rci-ink); color: var(--rci-offwhite); border-color: var(--rci-ink); }
+  .tag--alarm { background: var(--rci-red-hot); color: var(--rci-offwhite); border-color: var(--rci-ink); }
+  .lbl { font-family: var(--font-condensed); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--rci-ash); width: 86px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="row"><span class="lbl">Section</span><span class="tag">Theory</span><span class="tag">Current Affairs</span><span class="tag">Labor</span><span class="tag">International</span></div>
+  <div class="row"><span class="lbl">Status</span><span class="tag tag--red">Editorial</span><span class="tag tag--ink">Podcast</span><span class="tag tag--alarm">Breaking</span></div>
+  <div class="row"><span class="lbl">Meta</span><span class="tag">12 Mar 2026</span><span class="tag">5 min read</span><span class="tag">Worker–Labor Commission</span></div>
+</div>
+</body>
+</html>

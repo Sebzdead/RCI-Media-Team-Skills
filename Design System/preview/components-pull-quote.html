@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Pull quote</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin: 0; padding: 0; background: var(--rci-offwhite); }
+  .wrap { padding: 22px 26px; }
+  .pq {
+    border-left: 8px solid var(--rci-red);
+    padding: 6px 0 6px 20px;
+    max-width: 580px;
+  }
+  .pq .mark { font-family: var(--font-serif); font-size: 64px; line-height: 0.5; color: var(--rci-red); font-style: italic; }
+  .pq blockquote {
+    margin: 0 0 8px;
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 26px;
+    line-height: 1.18;
+    color: var(--rci-ink);
+  }
+  .pq cite {
+    font-family: var(--font-condensed);
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--rci-ink-soft);
+    font-style: normal;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="pq">
+    <div class="mark">"</div>
+    <blockquote>Better fewer, but better.</blockquote>
+    <cite>— Lenin · cited in the Manual</cite>
+  </div>
+</div>
+</body>
+</html>

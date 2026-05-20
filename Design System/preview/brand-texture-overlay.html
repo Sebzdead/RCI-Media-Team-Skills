@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Texture in use</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin: 0; padding: 0; background: var(--rci-offwhite); }
+  .wrap { padding: 16px 26px; }
+  .demo { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .card {
+    position: relative; height: 200px; padding: 18px;
+    display: flex; flex-direction: column; justify-content: flex-end;
+    border: 2px solid var(--rci-ink);
+    overflow: hidden;
+    color: var(--rci-offwhite);
+  }
+  .card .bg, .card .tx { position: absolute; inset: 0; pointer-events: none; }
+  .a { background: var(--rci-red); }
+  .a .tx { background: url(../assets/textures/grunge-peeled-paint.jpg) center/cover; mix-blend-mode: multiply; opacity: 0.55; }
+  .b { background: var(--rci-ink); }
+  .b .tx { background: url(../assets/textures/film-grain.jpg) center/cover; mix-blend-mode: screen; opacity: 0.25; }
+  h2 { font-family: var(--font-display); font-size: 44px; line-height: 0.9; text-transform: uppercase; margin: 0; position: relative; }
+  .lbl { position: absolute; top: 10px; left: 14px; font-family: var(--font-condensed); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="demo">
+    <div class="card a"><div class="tx"></div><span class="lbl">Red + Peel · multiply 55%</span><h2>GENERAL<br>STRIKE</h2></div>
+    <div class="card b"><div class="tx"></div><span class="lbl">Ink + Grain · screen 25%</span><h2>BREAKING<br>ANALYSIS</h2></div>
+  </div>
+</div>
+</body>
+</html>

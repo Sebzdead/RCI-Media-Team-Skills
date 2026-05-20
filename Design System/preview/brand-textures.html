@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Textures</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin: 0; padding: 0; background: var(--rci-offwhite); }
+  .wrap { padding: 18px 26px; }
+  .grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; }
+  .cell { aspect-ratio: 1.4 / 1; background-size: cover; background-position: center; border: 2px solid var(--rci-ink); position: relative; }
+  .cap { position: absolute; left: 0; bottom: 0; padding: 4px 6px; font-family: var(--font-condensed); font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; background: var(--rci-ink); color: var(--rci-offwhite); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="grid">
+    <div class="cell" style="background-image:url(../assets/textures/paper-gray.jpg)"><span class="cap">Paper</span></div>
+    <div class="cell" style="background-image:url(../assets/textures/film-grain.jpg)"><span class="cap">Film grain</span></div>
+    <div class="cell" style="background-image:url(../assets/textures/grunge-light-specks.jpg)"><span class="cap">Specks</span></div>
+    <div class="cell" style="background-image:url(../assets/textures/grunge-peeled-paint.jpg)"><span class="cap">Peel</span></div>
+    <div class="cell" style="background-image:url(../assets/textures/halftone-mesh.jpg)"><span class="cap">Halftone</span></div>
+  </div>
+</div>
+</body>
+</html>

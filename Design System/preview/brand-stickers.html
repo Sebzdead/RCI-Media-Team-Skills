@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Collage stickers — marker, tape, watermark</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin: 0; padding: 0; background: var(--rci-offwhite); }
+  .wrap { padding: 18px 22px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .panel {
+    border: 2px solid var(--rci-ink);
+    padding: 16px;
+    display: flex; align-items: center; justify-content: center;
+    position: relative;
+    min-height: 130px;
+    overflow: hidden;
+    background: var(--rci-offwhite);
+  }
+  .panel img { display: block; }
+  .marker img { width: 80%; }
+  .tape img { width: 60%; transform: rotate(-3deg); }
+  .stamp { background: var(--rci-red); }
+  .stamp img { width: 70%; mix-blend-mode: screen; filter: invert(1); opacity: 0.85; }
+  .lbl {
+    position: absolute; left: 0; bottom: 0;
+    padding: 3px 6px;
+    background: var(--rci-ink);
+    color: var(--rci-offwhite);
+    font-family: var(--font-condensed);
+    font-size: 9px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="panel marker">
+    <img src="../assets/stickers/black-marker.png" alt="Black marker stroke">
+    <span class="lbl">Marker</span>
+  </div>
+  <div class="panel tape">
+    <img src="../assets/stickers/black-tape.png" alt="Black tape strip">
+    <span class="lbl">Tape</span>
+  </div>
+</div>
+</body>
+</html>

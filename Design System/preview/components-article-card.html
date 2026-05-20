@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Article card</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin: 0; padding: 0; background: var(--rci-offwhite); }
+  .wrap { padding: 18px 26px; }
+  .card {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 16px;
+    background: var(--rci-offwhite);
+    border: 2px solid var(--rci-ink);
+    padding: 0;
+    box-shadow: 6px 6px 0 var(--rci-ink);
+    min-height: 200px;
+  }
+  .photo {
+    background:
+      linear-gradient(180deg, rgba(34,34,34,0.05), rgba(34,34,34,0.2)),
+      url("https://images.unsplash.com/photo-1591189824257-71b8c587b0ed?auto=format&fit=crop&w=600&q=60") center/cover,
+      var(--rci-ink);
+    filter: grayscale(0.8) contrast(1.05);
+    border-right: 2px solid var(--rci-ink);
+  }
+  .body { padding: 12px 14px 14px; display: flex; flex-direction: column; gap: 8px; }
+  .eyebrow { font-family: var(--font-condensed); font-weight: 700; font-size: 11px; letter-spacing: 0.18em; color: var(--rci-red); text-transform: uppercase; }
+  h3 { font-family: var(--font-display); font-size: 30px; line-height: 0.95; text-transform: uppercase; margin: 0; color: var(--rci-ink); }
+  .dek { font-family: var(--font-serif); font-size: 14px; line-height: 1.4; color: var(--rci-ink-soft); }
+  .dek b { color: var(--rci-ink); }
+  .meta { margin-top: auto; display: flex; gap: 10px; font-family: var(--font-condensed); font-size: 11px; letter-spacing: 0.14em; color: var(--rci-ash); text-transform: uppercase; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <div class="photo"></div>
+    <div class="body">
+      <span class="eyebrow">Current Affairs · International</span>
+      <h3>Trump faces an impossible dilemma against Iran</h3>
+      <div class="dek">American imperialism finds itself <b>caught between domestic pressure and a region out of its control</b>. Analysis from the International Commission.</div>
+      <div class="meta"><span>12 Mar 2026</span><span>·</span><span>5 min read</span></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

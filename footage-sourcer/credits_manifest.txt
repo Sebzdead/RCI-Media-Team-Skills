@@ -1,0 +1,7 @@
+[2026-05-20 09:21:26] SOURCE: Test Source | URL: https://example.com/test-broll | LICENSE: Public Domain
+[2026-05-20 09:24:41] SOURCE: USB Nazionale | URL: https://www.youtube.com/@usbnazionale | LICENSE: Fair Use
+[2026-05-20 09:24:41] SOURCE: Genova24 | URL: https://www.genova24.it | LICENSE: Fair Use
+[2026-05-20 09:35:33] SOURCE: Wikimedia Commons | URL: https://commons.wikimedia.org/wiki/Category:Tommy_Robinson | LICENSE: CC BY-SA
+[2026-05-20 09:35:33] SOURCE: Flickr CC Search | URL: https://www.flickr.com/search/?text=%22Tommy+Robinson%22+London+protest | LICENSE: CC BY
+[2026-05-20 09:41:12] SOURCE: UW LabHist Strike Project | URL: https://depts.washington.edu/labhist/strike/ | LICENSE: Public Domain
+[2026-05-20 09:41:12] SOURCE: LOC Chronicling America | URL: https://chroniclingamerica.loc.gov/ | LICENSE: Public Domain

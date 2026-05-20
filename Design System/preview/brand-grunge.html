@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Grunge & film textures</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin: 0; padding: 0; background: var(--rci-offwhite); }
+  .wrap { padding: 14px 18px; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 4px;
+  }
+  .cell {
+    aspect-ratio: 1.3 / 1;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid var(--rci-ink);
+    position: relative;
+  }
+  .cap {
+    position: absolute; left: 1px; bottom: 1px;
+    padding: 1px 4px;
+    font-family: var(--font-mono);
+    font-size: 9px;
+    background: rgba(34,34,34,0.85);
+    color: var(--rci-offwhite);
+  }
+  .meta {
+    margin-top: 10px;
+    font-family: var(--font-condensed);
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--rci-ash);
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="grid">
+    <div class="cell" style="background-image:url(../assets/textures/grunge-light-specks.jpg)"><span class="cap">specks</span></div>
+    <div class="cell" style="background-image:url(../assets/textures/grunge-peeled-paint.jpg)"><span class="cap">peel</span></div>
+    <div class="cell" style="background-image:url(../assets/textures/halftone-mesh.jpg)"><span class="cap">halftone</span></div>
+    <div class="cell" style="background-image:url(../assets/textures/grunge-222.jpg)"><span class="cap">g 222</span></div>
+    <div class="cell" style="background-image:url(../assets/textures/grunge-242.jpg)"><span class="cap">g 242</span></div>
+    <div class="cell" style="background-image:url(../assets/textures/grunge-264.jpg)"><span class="cap">g 264</span></div>
+
+    <div class="cell" style="background-image:url(../assets/textures/grunge-272.jpg)"><span class="cap">g 272</span></div>
+    <div class="cell" style="background-image:url(../assets/textures/grunge-283.jpg)"><span class="cap">g 283</span></div>
+    <div class="cell" style="background-image:url(../assets/textures/grunge-289.jpg)"><span class="cap">g 289</span></div>
+    <div class="cell" style="background-image:url(../assets/textures/grunge-308.jpg)"><span class="cap">g 308</span></div>
+    <div class="cell" style="background-image:url(../assets/textures/grunge-321.jpg)"><span class="cap">g 321</span></div>
+    <div class="cell" style="background-image:url(../assets/textures/grunge-340.jpg)"><span class="cap">g 340</span></div>
+
+    <div class="cell" style="background-image:url(../assets/textures/film-grain.jpg)"><span class="cap">film 177</span></div>
+    <div class="cell" style="background-image:url(../assets/textures/film-158.jpg)"><span class="cap">film 158</span></div>
+    <div class="cell" style="background-image:url(../assets/textures/au-fg-1.jpg)"><span class="cap">au-fg 1</span></div>
+    <div class="cell" style="background-image:url(../assets/textures/au-fg-4.jpg)"><span class="cap">au-fg 4</span></div>
+    <div class="cell" style="background-image:url(../assets/textures/au-fg-7.jpg)"><span class="cap">au-fg 7</span></div>
+    <div class="cell" style="background-image:url(../assets/textures/red-paper-alt.jpg)"><span class="cap">red alt</span></div>
+  </div>
+  <div class="meta">Grunge · film · AU-FG · red alt · all in assets/textures/</div>
+</div>
+</body>
+</html>

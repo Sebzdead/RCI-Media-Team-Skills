@@ -1,0 +1,29 @@
+{
+  "licensing_rules": {
+    "Public Domain": {
+      "allowed": true,
+      "attribution_required": false,
+      "editor_note": "Safe to modify and cut freely."
+    },
+    "CC0": {
+      "allowed": true,
+      "attribution_required": false,
+      "editor_note": "Universal creative commons zero drop-in."
+    },
+    "CC BY": {
+      "allowed": true,
+      "attribution_required": true,
+      "editor_note": "Requires adding the creator's link exactly to the manifest log."
+    },
+    "CC BY-NC": {
+      "allowed": false,
+      "attribution_required": true,
+      "editor_note": "WARNING: Avoid if alternative exists. Patreon/Donation funding can be flagged as commercial usage."
+    },
+    "All Rights Reserved": {
+      "allowed": "conditional",
+      "attribution_required": true,
+      "editor_note": "Evaluate strictly under Fair Use criteria. Use short critique/analysis segments only."
+    }
+  }
+}

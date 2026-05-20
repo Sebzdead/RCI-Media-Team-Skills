@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Globes</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html, body { margin: 0; padding: 0; background: var(--rci-offwhite); }
+  .wrap { padding: 18px 22px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .panel {
+    aspect-ratio: 1 / 1;
+    border: 2px solid var(--rci-ink);
+    display: flex; align-items: center; justify-content: center;
+    position: relative;
+    overflow: hidden;
+    padding: 12px;
+    box-sizing: border-box;
+  }
+  .light { background: var(--rci-offwhite); }
+  .ink { background: var(--rci-ink); }
+  .panel img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+  }
+  .lbl {
+    position: absolute; left: 0; bottom: 0;
+    padding: 3px 6px;
+    background: var(--rci-ink);
+    color: var(--rci-offwhite);
+    font-family: var(--font-condensed);
+    font-size: 9px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+  .ink .lbl { background: var(--rci-offwhite); color: var(--rci-ink); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="panel light">
+    <img src="../assets/backgrounds/globe-red.png" alt="Red wireframe globe">
+    <span class="lbl">Red wireframe</span>
+  </div>
+  <div class="panel ink">
+    <img src="../assets/backgrounds/globe-white.png" alt="White wireframe globe">
+    <span class="lbl">White wireframe</span>
+  </div>
+</div>
+</body>
+</html>
