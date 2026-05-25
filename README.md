@@ -8,13 +8,14 @@ This repository serves as a shared hub for automation workflows, AI coding assis
 
 ## 📂 Repository Structure
 
-The repository is organized into three primary areas:
+The repository is organized into four primary areas:
 
 ```
 RCI Media Team Skills/
-├── Design System/          # 🎨 Brand guidelines, typography, textures, and UI templates
-├── footage-sourcer/        # 🔍 AI-assisted footage sourcing and credit logging skill
-└── youtube-downloader/     # 📥 CLI tool to download and transcode media for editors
+├── Design System/                  # 🎨 Brand guidelines, typography, textures, and UI templates
+├── Video Essay Script Drafter/     # 📝 Workspace-scoped YouTube video essay scripting skill
+├── footage-sourcer/                # 🔍 AI-assisted footage sourcing and credit logging skill
+└── youtube-downloader/             # 📥 CLI tool to download and transcode media for editors
 ```
 
 ---
@@ -94,8 +95,31 @@ The tool is set up to run instantly using `uv`:
 
 ---
 
+## 📝 4. Video Essay Script Drafter
+
+The [Video Essay Script Drafter](./Video%20Essay%20Script%20Drafter) directory contains the `youtube-video-essay-script` workspace-scoped agent skill. This helps writers and editors adapt text essays, articles, and outlines into a production-ready YouTube video essay script.
+
+### Key Features
+* **Spoken-Prose Adaptation:** Rewrites written prose specifically "for the ear," prioritizing natural conversational flow, pacing, and verbal signposting.
+* **Directorial Cue Layering:** Automatically generates specific, actionable visual/footage cues `[V]`, on-screen graphics `[G]`, and music `[M]` to support the narration.
+* **Strict Message Faithfulness:** Adheres to the "Prime Directive" of preserving the source material's flow, vocabulary, argument, and political message without softening or neutralizing it.
+* **Punch-Up Humour:** Adds sharp, deadpan, and dry humour targeting powerful entities and figures, while ensuring it never punches down at ordinary or marginalized people.
+* **Runtime Calibration:** Targets standard video essay runtimes of 20–30 minutes (~3,000–4,500 spoken words at 150 wpm) and outputs runtime estimates.
+* **Built-in Fact Checking:** Appends a production notes section listing facts, statistics, recent events, and quotes to verify before filming.
+
+### How to Use
+1. **Via Antigravity Chat:** If you are using the Antigravity assistant in this workspace, this skill is pre-configured. You can trigger it during a chat by asking it to adapt text for a video essay or outline:
+   ```
+   Turn this article into a 25-minute YouTube video essay script: [article text or file link]
+   ```
+   Alternatively, trigger it explicitly by prompting the assistant to use the `youtube-video-essay-script` skill.
+
+2. **Via Claude (Web/Projects):** You can also use this skill natively in Claude. Simply upload the `youtube-video-essay-script.skill` file (or unzip it and upload the `SKILL.md` and `references/example_script.md` files) to a Claude Project's knowledge base or directly to a chat session, and instruct Claude to follow the provided guidelines to write your script.
+
+---
+
 ## 🤝 Sharing & Contribution
 
 Since this repository is managed with Git:
-* **Workspace Skills:** The `footage-sourcer` agent skill is version-controlled inside the repository. When a teammate clones or pulls the repository and opens it in Antigravity, the editor will automatically register the skill.
+* **Workspace Skills:** The `footage-sourcer` and `youtube-video-essay-script` agent skills are version-controlled inside the repository. When a teammate clones or pulls the repository and opens it in Antigravity, the editor will automatically register the skills.
 * **Adding New Tools:** When adding new utilities, ensure they are self-contained in their own directory, include a setup/run guide (preferring modern lightweight tools like `uv` or standard npm commands), and follow the RCI Media visual identity.
