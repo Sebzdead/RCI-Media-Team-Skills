@@ -2,7 +2,7 @@
 
 Welcome to the central repository for the **Revolutionary Communist International (RCI) Media Team**. 
 
-This repository serves as a shared hub for automation workflows, AI coding assistant skills (specifically for the Antigravity assistant), design systems, and custom utilities. Our goal is to streamline, automate, and standardize our media production and video editing workflows—covering everything from visual design to footage sourcing and encoding.
+This repository serves as a shared hub for automation workflows, AI coding assistant skills, design systems, and custom utilities. Our goal is to streamline, automate, and standardize our media production and video editing workflows—covering everything from visual design to footage sourcing and encoding.
 
 ---
 
@@ -53,7 +53,7 @@ The [Footage Sourcer](./footage-sourcer) directory contains the `footage-sourcer
 * **Automated Credit Logging:** Appends sourced assets directly to a central manifest file.
 
 ### How to Use
-1. **Via Antigravity Chat:** If you are using the Antigravity assistant in this workspace, you can trigger the skill using the `/footage-sourcer` command:
+1. **Via Antigravity Chat:** If you are using an AI coding assistant in this workspace, you can trigger the skill using the `/footage-sourcer` command:
    ```
    /footage-sourcer Search for historical clips of the 1919 Seattle General Strike
    ```
@@ -108,7 +108,7 @@ The [Video Essay Script Drafter](./Video%20Essay%20Script%20Drafter) directory c
 * **Built-in Fact Checking:** Appends a production notes section listing facts, statistics, recent events, and quotes to verify before filming.
 
 ### How to Use
-1. **Via Antigravity Chat:** If you are using the Antigravity assistant in this workspace, this skill is pre-configured. You can trigger it during a chat by asking it to adapt text for a video essay or outline:
+1. **Via an AI coding assistant:** If you are using an AI coding assistant in this workspace, this skill is pre-configured. You can trigger it during a chat by asking it to adapt text for a video essay or outline:
    ```
    Turn this article into a 25-minute YouTube video essay script: [article text or file link]
    ```
@@ -121,5 +121,5 @@ The [Video Essay Script Drafter](./Video%20Essay%20Script%20Drafter) directory c
 ## 🤝 Sharing & Contribution
 
 Since this repository is managed with Git:
-* **Workspace Skills:** The `footage-sourcer` and `youtube-video-essay-script` agent skills are version-controlled inside the repository. When a teammate clones or pulls the repository and opens it in Antigravity, the editor will automatically register the skills.
+* **Workspace Skills:** The `footage-sourcer` and `youtube-video-essay-script` agent skills are version-controlled inside the repository. When a teammate clones or pulls the repository and opens it in an AI coding assistant, the editor will automatically register the skills.
 * **Adding New Tools:** When adding new utilities, ensure they are self-contained in their own directory, include a setup/run guide (preferring modern lightweight tools like `uv` or standard npm commands), and follow the RCI Media visual identity.
