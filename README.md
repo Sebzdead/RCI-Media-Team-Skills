@@ -53,7 +53,7 @@ The [Footage Sourcer](./footage-sourcer) directory contains the `footage-sourcer
 * **Automated Credit Logging:** Appends sourced assets directly to a central manifest file.
 
 ### How to Use
-1. **Via Antigravity Chat:** If you are using an AI coding assistant in this workspace, you can trigger the skill using the `/footage-sourcer` command:
+1. **Via Claude Cowork/Agent Harness:** If you are using an AI coding assistant in this workspace, you can trigger the skill using the `/footage-sourcer` command:
    ```
    /footage-sourcer Search for historical clips of the 1919 Seattle General Strike
    ```
