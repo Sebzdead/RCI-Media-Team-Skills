@@ -8,13 +8,14 @@ This repository serves as a shared hub for automation workflows, AI coding assis
 
 ## 📂 Repository Structure
 
-The repository is organized into four primary areas:
+The repository is organized into five primary areas:
 
 ```
 RCI Media Team Skills/
 ├── Design System/                  # 🎨 Brand guidelines, typography, textures, and UI templates
 ├── Video Essay Script Drafter/     # 📝 Workspace-scoped YouTube video essay scripting skill
 ├── footage-sourcer/                # 🔍 AI-assisted footage sourcing and credit logging skill
+├── video-use/                      # 🎬 Agentic video editing & Premiere Pro handoff skill
 └── youtube-downloader/             # 📥 CLI tool to download and transcode media for editors
 ```
 
@@ -118,8 +119,65 @@ The [Video Essay Script Drafter](./Video%20Essay%20Script%20Drafter) directory c
 
 ---
 
+## 🎬 5. Video-Use
+
+The [video-use](./video-use) directory contains the `video-use` agentic skill, which enables coding assistants (such as Claude Code, Codex, and others) to edit raw video footage through natural conversation, perform frame-accurate selects, and sync them directly to Adobe Premiere Pro.
+
+### Key Features
+* **Audio-First Manifest Pipeline:** Automates transcription via Scribe (ElevenLabs) and packs phrase-level segments to minimize token usage while retaining exact timing.
+* **Three-Idea Concept Gate:** Generates and obtains user approval on exactly three distinct editorial directions before writing any cut decisions (EDL).
+* **Surgical EDL & Fast Cutting:** Drafts cut decisions into `edl.json` aligned to millisecond-accurate word boundaries, and extracts selects using FFmpeg (with input-side seeking for a ~25x speedup).
+* **Creative Cloud Sync Handoff:** Uploads and syncs select clips chronologically to Adobe Creative Cloud Files for direct timeline import in Premiere Pro.
+
+### Installation Instructions
+To set up this skill for any agent (particularly optimized for Claude Code):
+
+1. **System Dependencies:**
+   Ensure `ffmpeg` and `ffprobe` are installed and available on your system `$PATH` (e.g., `brew install ffmpeg` on macOS).
+2. **Python Environment Setup:**
+   Navigate to the skill folder and sync dependencies:
+   ```bash
+   cd video-use
+   # Prefer uv if available; fallback to pip
+   command -v uv >/dev/null && uv sync || pip install -e .
+   ```
+3. **Environment Secrets:**
+   Obtain an ElevenLabs API key from [elevenlabs.io](https://elevenlabs.io) (for Scribe transcription) and save it in a `.env` file at the root of the skill folder:
+   ```env
+   ELEVENLABS_API_KEY=your_key_here
+   ```
+4. **Agent Registration:**
+   * **Claude Code** (`~/.claude/` present): Symlink the entire `video-use` folder into Claude's global skills directory so the agent automatically loads it:
+     ```bash
+     mkdir -p ~/.claude/skills
+     ln -sfn /path/to/RCI-Media-Team-Skills/video-use ~/.claude/skills/video-use
+     ```
+   * **Codex** (`~/.codex/` present):
+     ```bash
+     mkdir -p ~/.codex/skills
+     ln -sfn /path/to/RCI-Media-Team-Skills/video-use ~/.codex/skills/video-use
+     ```
+   * **Other Agents:** Symlink `video-use/` to the agent's global skills folder, or append the instructions in [SKILL.md](./video-use/SKILL.md) to your agent's system instructions / context files (e.g., a `CLAUDE.md` import).
+
+### How to Use
+1. **Via Claude Code:**
+   * Open your terminal in the directory where your raw footage lives.
+   * Start your agent (e.g., `claude`) and prompt:
+     ```
+     edit these into a launch video
+     ```
+     or
+     ```
+     inventory these takes and propose a strategy
+     ```
+2. **Via Claude (Web Interface / Projects):**
+   * Add the contents of [SKILL.md](./video-use/SKILL.md) and [install.md](./video-use/install.md) directly to the Claude Project Knowledge Base or paste them at the start of your chat.
+   * Direct Claude to follow the guidelines inside `SKILL.md` to organize and cut your footage.
+
+---
+
 ## 🤝 Sharing & Contribution
 
 Since this repository is managed with Git:
-* **Workspace Skills:** The `footage-sourcer` and `youtube-video-essay-script` agent skills are version-controlled inside the repository. When a teammate clones or pulls the repository and opens it in an AI coding assistant, the editor will automatically register the skills.
+* **Workspace Skills:** The `footage-sourcer`, `youtube-video-essay-script`, and `video-use` agent skills are version-controlled inside the repository. When a teammate clones or pulls the repository and opens it in an AI coding assistant, the editor will automatically register the skills.
 * **Adding New Tools:** When adding new utilities, ensure they are self-contained in their own directory, include a setup/run guide (preferring modern lightweight tools like `uv` or standard npm commands), and follow the RCI Media visual identity.
